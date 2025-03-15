@@ -1,3 +1,10 @@
+Data-Driven Marketing: Predicting Term Deposit Sign-Ups for Banks
+
+Data Science Institute - Cohort 5 - Team 05 Project Report
+
+As a part of our team project, we have chosen "Bank Marketing" dataset and we are approaching this opportunity as a learning experience and to apply statistical and technical skills learnt throughout different modules. We began the project with Exploratory Data Analysis, which hepled analyzing correlation matrix between different variables. On the technical end, we started with identifying and removing the outliers, one-hotcoding variables and converting day/month to cyclical variable.
+
+
 1. What are the key variables and attributes in your dataset?
 
 Bank Client Data:
