@@ -28,7 +28,7 @@ A Portuguese bank executed a marketing campaign involving phone calls, aimed at 
 
 ##### Total Estimated Campaign Budget
 
-- **Total Cost:** €126,000 (Salaries) + €2,000 (Operational Costs) = **$128,000**
+- **Total Cost:** €126,000 (Salaries) + €2,000 (Operational Costs) = **€128,000**
 
 ##### Summary
 
