@@ -44,3 +44,24 @@ A Portuguese bank executed a marketing campaign involving phone calls, aimed at 
 ### Project Objective
 
 A subsequent iteration of this marketing campaign is planned. Leveraging the data from the first iteration, this project aims to enhance efficiencies and reduce the campaign duration while maintaining a similar success rate, thus lowering overall costs. The strategy involves developing a ranking system to prioritize potential clients based on their likelihood of subscribing to the term deposit product. By targeting the top 20% of ranked clients, we aim to achieve 90% of the expected outcomes of the entire campaign in a more cost-effective manner.
+
+# Project Overview
+- Requirements
+- Exploratory Data Analysis
+- Understanding the Raw Data
+- Data Cleaning and Handling Missing Values
+
+## Requirements
+This project uses the following Python libraries
+
+- pandas : For analysing and getting insights from datasets.
+- seaborn : For enhancing the style of matplotlib plots.
+- matplotlib : For creating graphs and plots.
+- NumPy : For fast matrix operations.
+- sklearn : For linear regression analysis.
+- ydata_profiling : For EDA
+
+## Exploratory Data Analysis (EDA)
+Our comprehensive EDA using panda functions provided rich insights into the "Bank Marketing" dataset. By performing statistical summaries, correlation analyses, and various visualizations, we were able to uncover important relationships, trends, and potential data quality issues. The results obtained from these analyses will inform further modeling and optimization efforts, ultimately contributing to a more efficient and successful marketing campaign.
+
+For a detailed exploration and interactive visualizations, download the EDA.ipynb file from our repository.
