@@ -2,7 +2,7 @@
 
 ## Data Science Institute - Cohort 5 - Team 05 Project Report
 
-As a part of our team project, we have chosen "Bank Marketing" dataset and we are approaching this opportunity as a learning experience and to apply statistical and technical skills learnt throughout different modules. We began the project with Exploratory Data Analysis, which hepled analyzing correlation matrix between different variables. On the technical end, we started with identifying and removing the outliers, one-hotcoding variables and converting day/month to cyclical variable.
+In our team project, we selected the "Bank Marketing" dataset to utilize our statistical and technical skills acquired across various modules. We embarked on this project with Exploratory Data Analysis (EDA) to evaluate the correlation matrix among different variables. On the technical front, we began by identifying and eliminating outliers, performing one-hot encoding on categorical variables, and converting day/month features into cyclical variables.
 
 ## Members
 
@@ -11,7 +11,7 @@ As a part of our team project, we have chosen "Bank Marketing" dataset and we ar
 
 ## Business Case
 
-A marketing campaign based on phone calls was carried out by a portuguese bank. Such campaing is aiming to sell subscriptions to term deposit to clients. An initial iteration of such campaign reached almost 45K clients where about 5K purchased the subscription (~11% success rate) and was carried out over the course of two months, with the following estimated costs.
+A Portuguese bank executed a marketing campaign involving phone calls, aimed at selling term deposit subscriptions to clients. The initial phase of the campaign targeted around 45,000 clients, achieving approximately 5,000 subscriptions (~11% success rate) over a two-month period. Below is the breakdown of the estimated costs for this campaign.
 
 ##### Team Costs (Salaries)
 
@@ -37,10 +37,10 @@ A marketing campaign based on phone calls was carried out by a portuguese bank. 
   - 18 Telemarketing Agents  
   - 1 QA Supervisor
 - **Duration:** 2 months  
-- **Expected Call Volume:** Each agent makes around 60 calls per day, totaling about 2,640 calls per agent over the campaign period, ensuring coverage of 45,000 people.
+- **Expected Call Volume:** Each agent makes approximately 60 calls per day, totaling around 2,640 calls per agent over the campaign period, thereby ensuring coverage of 45,000 clients.
 
 
 
 ### Project Objective
 
-A second iteration of such marketing campaing is going to be performed. Based on data compiled on the first iteration, this project aims to find efficiencies and reducing the duration of the campaing while still ensuring a similar success rate can be reached faster, and thus, cheaper. For that, a ranking system is going to be proposed in order to sort potential clients by likelihood of being interested in the product offered. The implementation of this proposal would imply that reaching the top 20% of the ranked clients will lead to the 90% of the expected outcome of the entire campaign. 
+A subsequent iteration of this marketing campaign is planned. Leveraging the data from the first iteration, this project aims to enhance efficiencies and reduce the campaign duration while maintaining a similar success rate, thus lowering overall costs. The strategy involves developing a ranking system to prioritize potential clients based on their likelihood of subscribing to the term deposit product. By targeting the top 20% of ranked clients, we aim to achieve 90% of the expected outcomes of the entire campaign in a more cost-effective manner.
