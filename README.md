@@ -66,4 +66,62 @@ Our comprehensive EDA using panda functions provided rich insights into the "Ban
 
 For a detailed exploration and interactive visualizations, download the EDA.ipynb file from our repository.
 
-## Understanding the Raw Data 
+## Understanding the Raw Data
+
+#### Schema
+
+| name       | type            | description                                                                                 |
+|------------|-----------------|---------------------------------------------------------------------------------------------|
+| age        | number (int64)  | Age of the client                                                                           |
+| balance    | number (float64)| Account balance of the client                                                               |
+| campaign   | number (int64)  | Number of contacts performed during this campaign and for this client                       |
+| contact    | string (object) | Contact communication type                                                                  |
+| day        | number (int64)  | Last contact day of the month                                                               |
+| default    | string (object) | Whether the client has credit in default                                                    |
+| duration   | number (int64)  | Last contact duration, in seconds                                                           |
+| education  | string (object) | Level of education of the client                                                            |
+| housing    | string (object) | Whether the client has a housing loan                                                       |
+| job        | string (object) | Job type of the client                                                                      |
+| loan       | string (object) | Whether the client has a personal loan                                                      |
+| marital    | string (object) | Marital status of the client                                                                |
+| month      | string (object) | Last contact month of the year                                                              |
+| pdays      | number (int64)  | Number of days since the client was last contacted from a previous campaign                 |
+| poutcome   | string (object) | Outcome of the previous marketing campaign                                                  |
+| previous   | number (int64)  | Number of contacts performed before this campaign and for this client                       |
+| y          | string (object) | Whether the client has subscribed to a term deposit                                         |
+
+### Understanding the Features
+
+| column name | feature                         | description                                                                                                        |
+|-------------|---------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| age         | Age                             | The age of the client, which may impact financial needs and decisions.                                             |
+| balance     | Account Balance                 | The balance amount in the client's account. Generally indicates financial stability.                               |
+| campaign    | Campaign Contacts               | The number of contacts made during the current marketing campaign for the client.                                  |
+| contact     | Contact Communication Type      | The type of communication used to reach the client (e.g., cellular, telephone).                                    |
+| day         | Last Contact Day                | The day of the month the last contact was made.                                                                    |
+| default     | Credit Default History          | Indicates if the client has defaulted on credit before.                                                            |
+| duration    | Contact Duration                | Duration in seconds of the last contact. Higher duration usually indicates better engagement.                      |
+| education   | Educational Level               | Level of education attained by the client.                                                                         |
+| housing     | Housing Loan Status             | Whether the client has a housing loan. May indicate long-term financial commitments.                               |
+| job         | Job Type                        | The type of job the client has.                                                                                     |
+| loan        | Personal Loan Status            | Whether the client has a personal loan.                                                                            |
+| marital     | Marital Status                  | The marital status of the client.                                                                                  |
+| month       | Last Contact Month              | The month in which the last contact was made. Seasonal effects might be observed.                                  |
+| pdays       | Days Since Prior Contact        | The number of days that passed since the client was last contacted in a previous campaign. -1 means not contacted before.|
+| poutcome    | Previous Campaign Outcome       | The outcome of the previous campaign contacts (e.g., success, failure).                                             |
+| previous    | Previous Contacts               | The number of contacts before the current campaign. Helps in understanding engagement history.                     |
+| y           | Term Deposit Subscription       | Whether the client has subscribed to a term deposit (Yes/No). This is the target variable.                         |
+
+### Summarizations of the Dataset
+
+The following table summarizes the key aspects derived from the Bank Marketing dataset, providing foundational insights including the extent of client information covered, the temporal dimension, and the completion status of the data.
+
+| question                                | analysis                                                                                       |
+|-----------------------------------------|------------------------------------------------------------------------------------------------|
+| How many clients are in this data set?  | The dataset consists of approximately 45,000 client records.                                   |
+| Over what period is this data collected?| The data is collected over a span of several years, with specific contact months noted.        |
+| What is the range of transaction values?| The account balance ranges from negative values to large positive amounts.                     |
+| What is the total number of observations?| There are about 45,000 observations in the dataset.                                            |
+| Are there any missing values?           | There are minimal missing values, and appropriate handling techniques such as imputation or exclusion may be needed. |
+
+These tables provide a structured view of the dataset, detailing the schema of the raw data, an understanding of each feature's role, and key summarizations that highlight the data's scope and completeness.
