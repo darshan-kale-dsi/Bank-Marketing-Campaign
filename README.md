@@ -125,3 +125,24 @@ The following table summarizes the key aspects derived from the Bank Marketing d
 | Are there any missing values?           | There are minimal missing values, and appropriate handling techniques such as imputation or exclusion may be needed. |
 
 These tables provide a structured view of the dataset, detailing the schema of the raw data, an understanding of each feature's role, and key summarizations that highlight the data's scope and completeness.
+
+## ### Data Cleaning and Handling Missing Values
+
+In preparation for analysis, the dataset underwent several key data cleaning steps to handle missing values, encode categorical variables, and mitigate the influence of outliers.
+
+1. **Trimming Extreme Values (Outliers)**:
+   - To reduce the impact of extreme outliers, we filtered the `balance` and `duration` columns. Records with `balance` less than 10,000 and `duration` less than 1,800 seconds were retained. This helps in maintaining a clean dataset by excluding potentially anomalous data points.
+
+2. **Handling Missing or Specific Values in `pdays`**:
+   - For the `pdays` column (number of days since the client was last contacted in a previous campaign), entries with a value of `-1` were replaced with `0`, indicating no prior contact; all others were marked as `1`.
+
+3. **Binary Encoding of Categorical Variables**:
+   - The dataset contains several binary categorical variables (`default`, `housing`, `loan`, and `y`). These were encoded to numerical values where `yes` was encoded as `1` and `no` was encoded as `0`.
+
+4. **Converting Month Names to Numerical Values**:
+   - The `month` column (indicating the last contact month) originally contained month names. These were converted to their respective numerical values for easier temporal analysis.
+
+5. **Creating Cyclical Features for `day` and `month`**:
+   - To capture the cyclical nature of time-related features, new columns representing sine and cosine transformations of `day` and `month` were introduced. This transformation helps in preserving the cyclical relationships (e.g., December and January are close).
+
+Through these cleaning steps, the dataset was prepared for subsequent analysis, ensuring that it is free from extreme outliers, missing critical values, and encoded appropriately for modeling and visualization techniques.
