@@ -126,7 +126,7 @@ The following table summarizes the key aspects derived from the Bank Marketing d
 
 These tables provide a structured view of the dataset, detailing the schema of the raw data, an understanding of each feature's role, and key summarizations that highlight the data's scope and completeness.
 
-## ### Data Cleaning and Handling Missing Values
+## Data Cleaning and Handling Missing Values
 
 In preparation for analysis, the dataset underwent several key data cleaning steps to handle missing values, encode categorical variables, and mitigate the influence of outliers.
 
