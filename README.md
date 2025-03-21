@@ -128,6 +128,9 @@ These tables provide a structured view of the dataset, detailing the schema of t
 
 ## Data Cleaning and Handling Missing Values
 
+![image](https://github.com/user-attachments/assets/536db2b1-4bcd-4647-8200-f8c400865d24)
+
+
 In preparation for analysis, the dataset underwent several key data cleaning steps to handle missing values, encode categorical variables, and mitigate the influence of outliers.
 
 1. **Trimming Extreme Values (Outliers)**:
@@ -146,3 +149,4 @@ In preparation for analysis, the dataset underwent several key data cleaning ste
    - To capture the cyclical nature of time-related features, new columns representing sine and cosine transformations of `day` and `month` were introduced. This transformation helps in preserving the cyclical relationships (e.g., December and January are close).
 
 Through these cleaning steps, the dataset was prepared for subsequent analysis, ensuring that it is free from extreme outliers, missing critical values, and encoded appropriately for modeling and visualization techniques.
+
