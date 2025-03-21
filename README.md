@@ -128,7 +128,7 @@ These tables provide a structured view of the dataset, detailing the schema of t
 
 ## Data Cleaning and Handling Missing Values
 
-![image](https://github.com/user-attachments/assets/536db2b1-4bcd-4647-8200-f8c400865d24)
+![image](https://github.com/user-attachments/assets/3c1b0b1f-5c38-4fe6-813d-eb42c79c613a)
 
 
 In preparation for analysis, the dataset underwent several key data cleaning steps to handle missing values, encode categorical variables, and mitigate the influence of outliers.
