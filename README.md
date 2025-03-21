@@ -219,8 +219,8 @@ Testing F1 Score: The test F1 score of 0.950 (95.00%) reflects the model's compe
 #### Summary
 The metrics reveal an outstanding model performance, both on the training and testing datasets:
 
-High Accuracy: Reflects the model's precise predictions.
-High Cohen's Kappa: Indicates strong agreement with the actual outcomes.
-Low Log Loss: Suggests well-calibrated predictions.
-High F1 Score: Demonstrates balanced precision and recall.
+- High Accuracy: Reflects the model's precise predictions.
+- High Cohen's Kappa: Indicates strong agreement with the actual outcomes.
+- Low Log Loss: Suggests well-calibrated predictions.
+- High F1 Score: Demonstrates balanced precision and recall.
 Despite slight reductions in the test metrics compared to training metrics (which are expected), the model retains substantial predictive power and reliability. This consistency ensures its applicability for efficiently predicting term deposit subscriptions for future marketing campaigns.
