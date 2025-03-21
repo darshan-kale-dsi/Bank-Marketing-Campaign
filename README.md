@@ -47,13 +47,13 @@ A subsequent iteration of this marketing campaign is planned. Leveraging the dat
 
 # Project Overview
 - [Requirements](#Requirements)
-- [Exploratory Data Analysis](#Exploratory Data Analysis)
-- [Understanding the Raw Data](#Understanding the Raw Data)
-- [Data Cleaning and Handling Missing Values](#Data Cleaning and Handling Missing Values)
-- [Correlation between features](#Correlation between features)
-- [Model Development](#Model Development)
-- [Handling Imbalanced Data](#Handling Imbalanced Data)
-- [Model Training and Evaluation](#Model Training and Evaluation)
+- [Exploratory Data Analysis](#Exploratory-Data-Analysis)
+- [Understanding the Raw Data](#Understanding-the-Raw-Data)
+- [Data Cleaning and Handling Missing Values](#Data-Cleaning-and-Handling-Missing-Values)
+- [Correlation between features](#Correlation-between-features)
+- [Model Development](#Model-Development)
+- [Handling Imbalanced Data](#Handling-Imbalanced-Data)
+- [Model Training and Evaluation](#Model-Training-and-Evaluation)
 
 ## Requirements
 This project uses the following Python libraries
