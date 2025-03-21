@@ -152,7 +152,7 @@ Through these cleaning steps, the dataset was prepared for subsequent analysis, 
 
 ## Correlation between features
 
-![image](https://github.com/user-attachments/assets/56f64718-b259-439e-8207-81b0277ff08b)
+![image](https://github.com/user-attachments/assets/402765fe-51a0-498b-a6b0-bc3fbc92199e)
 
 The correlation matrix presented provides insight into the linear relationships between various features within the dataset, with a specific focus on the target variable, `y`, which indicates term deposit subscription (0 or 1). Key observations include:
 
