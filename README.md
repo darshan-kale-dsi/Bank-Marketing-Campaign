@@ -177,19 +177,19 @@ In summary, `duration` emerges as the most influential feature positively correl
 ## Model Development
 A robust pipeline was designed to streamline preprocessing and modeling. The pipeline involved:
 
-#### 1. Preprocessing with StandardScaler and OneHotEncoder:
-StandardScaler:
+- Preprocessing with StandardScaler and OneHotEncoder:
+  - StandardScaler:
 Numerical Columns: Standardizing numerical features was essential to bring all variables to a common scale, which aids in ensuring that each feature contributes equally to the model’s performance. This process subtracts the mean and divides by the standard deviation of each feature, resulting in a distribution with a mean of 0 and a standard deviation of 1 for each numerical variable.
 
-OneHotEncoder:
+  - OneHotEncoder:
 
 Categorical Columns: Encoding categorical variables into a format that can be provided to the model was achieved through one-hot encoding. This technique converts categorical values into a binary vector, ensuring the model treats them as separate features without assuming any ordinal relationship among categories.
 
-ColumnTransformer:
+  - ColumnTransformer:
 
 We employed ColumnTransformer to apply the appropriate transformations to the respective columns in a single step. This integrated approach ensured that both numerical and categorical transformations were consistently and efficiently applied.
 
-#### 2. Machine Learning Models:
+- Machine Learning Models:
 A range of machine learning models such as Logistic Regression, Random Forest, XGBoost, LightGBM, K-Nearest Neighbors, Naive Bayes, Support Vector Machines were trained to capture the nuances in the data and to ensure robust performance. The diversity in algorithms allowed us to select the most effective model (i.e XGBoost) based on various performance metrics.
 
 ## Handling Imbalanced Data
