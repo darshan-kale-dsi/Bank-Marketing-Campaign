@@ -154,3 +154,22 @@ Through these cleaning steps, the dataset was prepared for subsequent analysis, 
 
 ![image](https://github.com/user-attachments/assets/56f64718-b259-439e-8207-81b0277ff08b)
 
+The correlation matrix presented provides insight into the linear relationships between various features within the dataset, with a specific focus on the target variable, `y`, which indicates term deposit subscription (0 or 1). Key observations include:
+
+1. **Duration**: The feature `duration` shows a strong positive correlation with the target variable `y`, indicating that longer contact durations are significantly associated with a higher probability of subscription to a term deposit.
+  
+2. **Previous and Pdays**: There is a notable positive correlation between `previous` and `pdays`. This relationship suggests that clients who had a higher number of previous contacts also have shorter intervals since their last contact in the previous campaign, indicating ongoing engagement.
+
+3. **Campaign and Duration**: A slight negative correlation exists between `campaign` and `duration`. This suggests that an increased number of contacts within a single campaign might be associated with shorter individual contact durations, possibly indicating less effective engagement when clients are contacted too frequently.
+
+4. **Housing and Loan**: Both `housing` and `loan` features are weakly correlated with each other, potentially implying that clients with housing loans might also have personal loans, albeit to a small extent.
+
+5. **Balance**: The `balance` feature has a weak positive correlation with `y`. While higher account balances slightly influence the likelihood of subscribing to a term deposit, the correlation is weak, suggesting other factors might be more crucial in the decision-making process.
+
+6. **Age**: There is a weak negative correlation between `age` and term deposit subscription (`y`). This suggests that older clients have a slightly lower tendency to subscribe, although this impact is not substantial.
+
+7. **Job and Education**: Employment (`job`) and educational attainment (`education`) features show very low correlations with the target variable, indicating that while these demographic factors are crucial, they do not strongly influence whether a client subscribes to a term deposit.
+
+8. **Marital Status**: The feature `marital` shows very low to negligible correlation with the target variable `y`, implying that being single, married, or divorced does not significantly affect a client's term deposit subscription status.
+
+In summary, `duration` emerges as the most influential feature positively correlated with term deposit subscriptions, while other features like `previous`, `balance`, and demographic attributes exhibit much weaker correlations with `y`. This matrix underscores the need for including both strong and weakly correlated features in model development to capture the complex relationships influencing term deposit subscriptions.
