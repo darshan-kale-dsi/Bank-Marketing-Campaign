@@ -185,12 +185,13 @@ A robust pipeline was designed to streamline preprocessing and modeling. The pip
      variable.
 
   - OneHotEncoder:
-
-Categorical Columns: Encoding categorical variables into a format that can be provided to the model was achieved through one-hot encoding. This technique converts categorical values into a binary vector, ensuring the model treats them as separate features without assuming any ordinal relationship among categories.
+     Categorical Columns: Encoding categorical variables into a format that can be provided to the model was achieved through one-hot 
+     encoding. This technique converts categorical values into a binary vector, ensuring the model treats them as separate features 
+     without assuming any ordinal relationship among categories.
 
   - ColumnTransformer:
-
-We employed ColumnTransformer to apply the appropriate transformations to the respective columns in a single step. This integrated approach ensured that both numerical and categorical transformations were consistently and efficiently applied.
+     We employed ColumnTransformer to apply the appropriate transformations to the respective columns in a single step. This 
+     integrated approach ensured that both numerical and categorical transformations were consistently and efficiently applied.
 
 - Machine Learning Models:
 A range of machine learning models such as Logistic Regression, Random Forest, XGBoost, LightGBM, K-Nearest Neighbors, Naive Bayes, Support Vector Machines were trained to capture the nuances in the data and to ensure robust performance. The diversity in algorithms allowed us to select the most effective model (i.e XGBoost) based on various performance metrics.
