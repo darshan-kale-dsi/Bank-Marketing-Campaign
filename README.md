@@ -179,7 +179,10 @@ A robust pipeline was designed to streamline preprocessing and modeling. The pip
 
 - Preprocessing with StandardScaler and OneHotEncoder:
   - StandardScaler:
-Numerical Columns: Standardizing numerical features was essential to bring all variables to a common scale, which aids in ensuring that each feature contributes equally to the model’s performance. This process subtracts the mean and divides by the standard deviation of each feature, resulting in a distribution with a mean of 0 and a standard deviation of 1 for each numerical variable.
+     Numerical Columns: Standardizing numerical features was essential to bring all variables to a common scale, which aids in 
+     ensuring that each feature contributes equally to the model’s performance. This process subtracts the mean and divides by the 
+     standard deviation of each feature, resulting in a distribution with a mean of 0 and a standard deviation of 1 for each numerical 
+     variable.
 
   - OneHotEncoder:
 
