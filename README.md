@@ -190,7 +190,7 @@ ColumnTransformer:
 We employed ColumnTransformer to apply the appropriate transformations to the respective columns in a single step. This integrated approach ensured that both numerical and categorical transformations were consistently and efficiently applied.
 
 #### 2. Machine Learning Models:
-Multiple classifiers were trained, including Logistic Regression, Random Forest, XGBoost, LightGBM, K-Nearest Neighbors, Naive Bayes, and others.
+A range of machine learning models such as Logistic Regression, Random Forest, XGBoost, LightGBM, K-Nearest Neighbors, Naive Bayes, Support Vector Machines were trained to capture the nuances in the data and to ensure robust performance. The diversity in algorithms allowed us to select the most effective model (i.e XGBoost) based on various performance metrics.
 
 ## Handling Imbalanced Data
 Given the imbalance in the dataset’s target variable y (with the majority class dominating the minority class), addressing this imbalance was crucial to prevent biased model performance. We applied the Synthetic Minority Over-sampling Technique (SMOTE) to create a balanced training set:
