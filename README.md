@@ -173,3 +173,19 @@ The correlation matrix presented provides insight into the linear relationships 
 8. **Marital Status**: The feature `marital` shows very low to negligible correlation with the target variable `y`, implying that being single, married, or divorced does not significantly affect a client's term deposit subscription status.
 
 In summary, `duration` emerges as the most influential feature positively correlated with term deposit subscriptions, while other features like `previous`, `balance`, and demographic attributes exhibit much weaker correlations with `y`. This matrix underscores the need for including both strong and weakly correlated features in model development to capture the complex relationships influencing term deposit subscriptions.
+
+##Model Development
+A robust pipeline was designed to streamline preprocessing and modeling. The pipeline involved:
+
+### 1. Preprocessing with StandardScaler and OneHotEncoder:
+We used ColumnTransformer to standardize numerical columns and encode categorical columns.
+
+### 2. Machine Learning Models:
+Multiple classifiers were trained, including Logistic Regression, Random Forest, XGBoost, LightGBM, K-Nearest Neighbors, Naive Bayes, and others.
+
+## Handling Imbalanced Data
+Given the imbalance in the target variable, the SMOTE technique (Synthetic Minority Over-sampling Technique) was applied to achieve a balanced dataset.
+
+## Model Training and Evaluation
+The dataset was split into training and testing sets, and models were trained using the pipeline.
+Overall assessment metrics for the models demonstrated high performance, with the fine-tuned XGBClassifier delivering the best results.
