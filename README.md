@@ -178,13 +178,27 @@ In summary, `duration` emerges as the most influential feature positively correl
 A robust pipeline was designed to streamline preprocessing and modeling. The pipeline involved:
 
 #### 1. Preprocessing with StandardScaler and OneHotEncoder:
-We used ColumnTransformer to standardize numerical columns and encode categorical columns.
+StandardScaler:
+Numerical Columns: Standardizing numerical features was essential to bring all variables to a common scale, which aids in ensuring that each feature contributes equally to the model’s performance. This process subtracts the mean and divides by the standard deviation of each feature, resulting in a distribution with a mean of 0 and a standard deviation of 1 for each numerical variable.
+
+OneHotEncoder:
+
+Categorical Columns: Encoding categorical variables into a format that can be provided to the model was achieved through one-hot encoding. This technique converts categorical values into a binary vector, ensuring the model treats them as separate features without assuming any ordinal relationship among categories.
+
+ColumnTransformer:
+
+We employed ColumnTransformer to apply the appropriate transformations to the respective columns in a single step. This integrated approach ensured that both numerical and categorical transformations were consistently and efficiently applied.
 
 #### 2. Machine Learning Models:
 Multiple classifiers were trained, including Logistic Regression, Random Forest, XGBoost, LightGBM, K-Nearest Neighbors, Naive Bayes, and others.
 
 ## Handling Imbalanced Data
-Given the imbalance in the target variable, the SMOTE technique (Synthetic Minority Over-sampling Technique) was applied to achieve a balanced dataset.
+Given the imbalance in the dataset’s target variable y (with the majority class dominating the minority class), addressing this imbalance was crucial to prevent biased model performance. We applied the Synthetic Minority Over-sampling Technique (SMOTE) to create a balanced training set:
+
+SMOTE (SMOTENC for Categorical Data):
+Synthetic Data Creation: SMOTE works by generating synthetic instances for the minority class by interpolating between existing minority samples. SMOTENC extends this approach to datasets with categorical features.
+Balancing the Dataset: This technique ensures that the classifier receives an equal representation of both classes during learning, thereby improving its ability to generalize and predict the minority class more accurately.
+After balancing the dataset, it was split into training and testing sets to facilitate model training and evaluation.
 
 ## Model Training and Evaluation
 Overall Assessment Metrics Interpretation
