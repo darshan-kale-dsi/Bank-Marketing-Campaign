@@ -46,10 +46,14 @@ A Portuguese bank executed a marketing campaign involving phone calls, aimed at 
 A subsequent iteration of this marketing campaign is planned. Leveraging the data from the first iteration, this project aims to enhance efficiencies and reduce the campaign duration while maintaining a similar success rate, thus lowering overall costs. The strategy involves developing a ranking system to prioritize potential clients based on their likelihood of subscribing to the term deposit product. By targeting the top 20% of ranked clients, we aim to achieve 90% of the expected outcomes of the entire campaign in a more cost-effective manner.
 
 # Project Overview
-- Requirements
-- Exploratory Data Analysis
-- Understanding the Raw Data
-- Data Cleaning and Handling Missing Values
+- [Requirements](#Requirements)
+- [Exploratory Data Analysis](#Exploratory Data Analysis)
+- [Understanding the Raw Data](#Understanding the Raw Data)
+- [Data Cleaning and Handling Missing Values](#Data Cleaning and Handling Missing Values)
+- [Correlation between features](#Correlation between features)
+- [Model Development](#Model Development)
+- [Handling Imbalanced Data](#Handling Imbalanced Data)
+- [Model Training and Evaluation](#Model Training and Evaluation)
 
 ## Requirements
 This project uses the following Python libraries
@@ -205,7 +209,6 @@ Balancing the Dataset: This technique ensures that the classifier receives an eq
 After balancing the dataset, it was split into training and testing sets to facilitate model training and evaluation.
 
 ## Model Training and Evaluation
-Overall Assessment Metrics Interpretation
 The overall assessment metrics provide a comprehensive evaluation of the model's performance on the training and testing datasets. The key metrics are accuracy, Cohen's kappa, log loss, and F1 score.
 
 #### Accuracy Score
