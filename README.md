@@ -150,3 +150,7 @@ In preparation for analysis, the dataset underwent several key data cleaning ste
 
 Through these cleaning steps, the dataset was prepared for subsequent analysis, ensuring that it is free from extreme outliers, missing critical values, and encoded appropriately for modeling and visualization techniques.
 
+## Correlation between features
+
+![image](https://github.com/user-attachments/assets/56f64718-b259-439e-8207-81b0277ff08b)
+
