@@ -6,8 +6,8 @@ In our team project, we selected the "Bank Marketing" dataset to utilize our sta
 
 ## Members
 
-- Sebastien Lozano-Forero
-- Darshan Kale
+- [Sebastien Lozano-Forero] (https://github.com/sebmatecho)
+- [Darshan Kale] (https://github.com/darshan-kale-dsi)
 
 ## Business Case
 
