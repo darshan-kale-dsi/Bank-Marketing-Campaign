@@ -39,7 +39,7 @@ A Portuguese bank executed a marketing campaign involving phone calls, aimed at 
 - **Duration:** 2 months  
 - **Expected Call Volume:** Each agent makes approximately 60 calls per day, totaling around 2,640 calls per agent over the campaign period, thereby ensuring coverage of 45,000 clients.
 
-- Source : [Bank Marketing](#https://archive.ics.uci.edu/dataset/222/bank+marketing)
+Source : [Bank Marketing](https://archive.ics.uci.edu/dataset/222/bank+marketing)
 
 ### Project Objective
 
