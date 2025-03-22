@@ -60,11 +60,20 @@ A subsequent iteration of this marketing campaign is planned. Leveraging the dat
 ## Requirements
 This project uses the following Python libraries
 
-- pandas : For analysing and getting insights from datasets.
-- seaborn : For enhancing the style of matplotlib plots.
-- matplotlib : For creating graphs and plots.
-- NumPy : For fast matrix operations.
-- sklearn : For linear regression analysis.
+- pandas: For analyzing, manipulating, and getting insights from datasets.
+- NumPy: For efficient numerical computations and fast matrix operations.
+- scikit-learn: For machine learning algorithms, preprocessing, model selection, and evaluation. Includes modules for train-test split, cross-validation, hyperparameter tuning, and metrics. Key components include LinearRegression, LogisticRegression, RandomForestClassifier, SVM, KNeighborsClassifier, BernoulliNB, Pipeline, ColumnTransformer, StandardScaler, OneHotEncoder, StratifiedKFold, GridSearchCV, and various evaluation metrics like accuracy_score, mean_squared_error, classification_report, confusion_matrix.
+- xgboost: For advanced gradient boosting algorithms, specifically XGBClassifier.
+- lightgbm: For efficient gradient boosting algorithms, using the LGBMClassifier.
+- imblearn: For handling imbalanced datasets with methods like SMOTE and SMOTENC.
+- missingno: For visualizing missing values in the dataset.
+- hyperopt: For hyperparameter optimization using Bayesian optimization algorithms, with components like tpe, Trials, hp, fmin, and space_eval.
+- matplotlib: For creating static, interactive, and animated plots and visualizations.
+- scikit-plot: For additional plotting capabilities for scikit-learn objects.
+- os: For interacting with the operating system.
+- pickle: For serializing and deserializing Python object structures.
+- Pathlib: For object-oriented file system paths.
+- shap: For explaining the output of machine learning models using SHAP (SHapley Additive exPlanations) values.
 - ydata_profiling : For EDA
 
 ## Exploratory Data Analysis (EDA)
