@@ -82,6 +82,9 @@ Our comprehensive EDA using panda functions provided rich insights into the "Ban
 
 For a detailed exploration and interactive visualizations, download the [EDA.ipynb](notebooks/EDA.ipynb) file from our repository.
 
+Flow Chart : ![image](https://github.com/user-attachments/assets/bad41e74-6d08-4263-a2dc-49ca7bf4db5a)
+
+
 ## Understanding the Raw Data
 
 #### Schema
