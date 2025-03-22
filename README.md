@@ -76,7 +76,7 @@ This project uses the following Python libraries
 - shap: For explaining the output of machine learning models using SHAP (SHapley Additive exPlanations) values.
 - ydata_profiling : For EDA
 
-## Exploratory Data Analysis (EDA)
+## Exploratory Data Analysis
 Our comprehensive EDA using panda functions provided rich insights into the "Bank Marketing" dataset. By performing statistical summaries, correlation analyses, and various visualizations, we were able to uncover important relationships, trends, and potential data quality issues. The results obtained from these analyses will inform further modeling and optimization efforts, ultimately contributing to a more efficient and successful marketing campaign.
 
 For a detailed exploration and interactive visualizations, download the [EDA.ipynb](notebooks/EDA.ipynb) file from our repository.
