@@ -54,6 +54,8 @@ A subsequent iteration of this marketing campaign is planned. Leveraging the dat
 - [Model Development](#Model-Development)
 - [Handling Imbalanced Data](#Handling-Imbalanced-Data)
 - [Model Training and Evaluation](#Model-Training-and-Evaluation)
+- [Model Deployment and Interpretation](#Model-Deployment-and-Interpretation)
+- [Further Model Assessment](#Further-Model-Assessment)
 
 ## Requirements
 This project uses the following Python libraries
@@ -237,17 +239,18 @@ Despite slight reductions in the test metrics compared to training metrics (whic
 After developing and fine-tuning the models, the next critical step was deploying the best-performing model to make predictions on new, unseen data and assess its performance in a real-world scenario.
 
 ### Deployment on New Dataset
+
 #### 1. Predicting Probabilities:
-        Using the finalized pipeline, we deployed the model to predict the probabilities of term deposit subscriptions for each client 
-        in the new dataset. The predict_proba method provided the likelihood of each class ('no' and 'yes'), enabling us to gauge the 
-        confidence of the model in its predictions.
+  Using the finalized pipeline, we deployed the model to predict the probabilities of term deposit subscriptions for each client 
+  in the new dataset. The predict_proba method provided the likelihood of each class ('no' and 'yes'), enabling us to gauge the 
+  confidence of the model in its predictions.
 #### 2. Concatenating Predictions:
-        The prediction probabilities were concatenated with the original dataset to provide a comprehensive view, allowing us to  
-        analyze the predictions alongside the existing features. This combined dataset facilitated further analysis and reporting.
+  The prediction probabilities were concatenated with the original dataset to provide a comprehensive view, allowing us to  
+  analyze the predictions alongside the existing features. This combined dataset facilitated further analysis and reporting.
 #### 3. Sorting Predictions:
-        To identify the clients with the highest likelihood of subscribing to a term deposit, we sorted the dataset based on the 'yes' 
-        probability in descending order. This prioritization is crucial for the bank's marketing strategy, allowing them to target the 
-        most promising clients effectively.
+  To identify the clients with the highest likelihood of subscribing to a term deposit, we sorted the dataset based on the 'yes' 
+  probability in descending order. This prioritization is crucial for the bank's marketing strategy, allowing them to target the 
+  most promising clients effectively.
 
 ### Model Interpretation with SHAP
 
@@ -256,3 +259,18 @@ After developing and fine-tuning the models, the next critical step was deployin
 To ensure transparency and interpretability in our model predictions, we employed SHAP (SHapley Additive exPlanations), a powerful tool for interpreting machine learning models:
 
 The SHAP summary plot visualizes the impact of each feature on the model's predictions, highlighting the most influential features. This visualization helps stakeholders understand which factors contribute the most to the likelihood of term deposit subscriptions.
+
+## Further Model Assessment
+
+Beyond deployment and interpretation, additional steps were undertaken to comprehensively assess the model’s performance using a variety of evaluation metrics. These metrics are crucial for understanding the effectiveness of the model in ranking and classification.
+
+### Generating Evaluation Metrics
+#### 1. Cumulative Gain Curve:
+This curve demonstrates the percentage of positive responses captured by the model as we increase the percentage of the sample. It’s vital for understanding how well the model ranks positive instances.
+
+#### 2. Lift Curve:
+The lift curve shows the performance improvement of the model over random guessing. A higher lift indicates better model performance.
+
+#### 3. ROC Curve:
+The Receiver Operating Characteristic (ROC) curve plots the true positive rate against the false positive rate, providing insights into the model’s ability to discriminate between the positive and negative classes.
+
