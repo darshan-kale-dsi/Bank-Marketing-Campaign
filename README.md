@@ -274,12 +274,21 @@ The SHAP summary plot visualizes the impact of each feature on the model's predi
 Beyond deployment and interpretation, additional steps were undertaken to comprehensively assess the model’s performance using a variety of evaluation metrics. These metrics are crucial for understanding the effectiveness of the model in ranking and classification.
 
 ### Generating Evaluation Metrics
-#### 1. Cumulative Gain Curve:
-This curve demonstrates the percentage of positive responses captured by the model as we increase the percentage of the sample. It’s vital for understanding how well the model ranks positive instances.
 
-#### 2. Lift Curve:
-The lift curve shows the performance improvement of the model over random guessing. A higher lift indicates better model performance.
+![image](https://github.com/user-attachments/assets/be2b63d5-46f3-4a0e-8b41-1523d56aec88)
+![image](https://github.com/user-attachments/assets/ae12e323-bcf7-4242-8202-0828a0f69e4e)
 
-#### 3. ROC Curve:
-The Receiver Operating Characteristic (ROC) curve plots the true positive rate against the false positive rate, providing insights into the model’s ability to discriminate between the positive and negative classes.
+
+#### XGBClassifier
+- Cumulative Gain Curve: The curve demonstrates excellent early capture of positive instances, effectively identifying the majority of subscribers in a smaller portion of the sample.
+- Lift Curve: The curve shows high initial lift, underscoring the model's effectiveness in prioritizing likely subscribers, although it diminishes as larger portions are considered.
+- ROC Curve: The curve outlines the strong discriminative power of the model with an AUC of 0.93, indicating a high level of performance in distinguishing the two classes.
+
+#### XGBClassifier_finetuned
+- Cumulative Gain Curve: Very similar to the base model, showing significant early capture capability and maintaining a slightly more aggressive slope in the initial segment, indicating marginal improvements.
+- Lift Curve: The fine-tuned model demonstrates similar high initial lift values but slightly higher sustainment of lift across a broader segment of the sample, reflecting potential improvements in targeting efficiency.
+- ROC Curve: Again, the fine-tuned model showcases high AUC values of 0.93, indicating exceptional discriminative power, consistent with the base model, but with slight enhancements across various metrics.
+
+Both the XGBClassifier and its fine-tuned version exhibit strong performance in identifying and prioritizing term deposit subscribers, significantly outperforming random guessing. The fine-tuned model appears to offer slight improvements in the lift curve and cumulative gain curve, making it an even more effective tool for the bank's marketing campaigns. The high AUC values confirm the models' robustness and reliability in practical applications. Through these evaluation metrics, stakeholders can confidently target potential clients, improving the efficiency and success rates of the marketing efforts.
+
 
