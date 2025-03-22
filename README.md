@@ -232,3 +232,27 @@ The metrics reveal an outstanding model performance, both on the training and te
 - High F1 Score: Demonstrates balanced precision and recall.
 
 Despite slight reductions in the test metrics compared to training metrics (which are expected), the model retains substantial predictive power and reliability. This consistency ensures its applicability for efficiently predicting term deposit subscriptions for future marketing campaigns.
+
+## Model Deployment and Interpretation
+After developing and fine-tuning the models, the next critical step was deploying the best-performing model to make predictions on new, unseen data and assess its performance in a real-world scenario.
+
+### Deployment on New Dataset
+#### 1. Predicting Probabilities:
+        Using the finalized pipeline, we deployed the model to predict the probabilities of term deposit subscriptions for each client 
+        in the new dataset. The predict_proba method provided the likelihood of each class ('no' and 'yes'), enabling us to gauge the 
+        confidence of the model in its predictions.
+#### 2. Concatenating Predictions:
+        The prediction probabilities were concatenated with the original dataset to provide a comprehensive view, allowing us to  
+        analyze the predictions alongside the existing features. This combined dataset facilitated further analysis and reporting.
+#### 3. Sorting Predictions:
+        To identify the clients with the highest likelihood of subscribing to a term deposit, we sorted the dataset based on the 'yes' 
+        probability in descending order. This prioritization is crucial for the bank's marketing strategy, allowing them to target the 
+        most promising clients effectively.
+
+### Model Interpretation with SHAP
+
+![image](https://github.com/user-attachments/assets/cdc60351-8910-4b7f-babe-5a7787d395c5)
+
+To ensure transparency and interpretability in our model predictions, we employed SHAP (SHapley Additive exPlanations), a powerful tool for interpreting machine learning models:
+
+The SHAP summary plot visualizes the impact of each feature on the model's predictions, highlighting the most influential features. This visualization helps stakeholders understand which factors contribute the most to the likelihood of term deposit subscriptions.
