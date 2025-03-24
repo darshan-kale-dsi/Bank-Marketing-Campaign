@@ -80,7 +80,7 @@ This project uses the following Python libraries
 ## Exploratory Data Analysis
 Our comprehensive EDA using panda functions provided rich insights into the "Bank Marketing" dataset. By performing statistical summaries, correlation analyses, and various visualizations, we were able to uncover important relationships, trends, and potential data quality issues. The results obtained from these analyses will inform further modeling and optimization efforts, ultimately contributing to a more efficient and successful marketing campaign.
 
-For a detailed exploration and interactive visualizations, download the [EDA.ipynb](notebooks/EDA.ipynb) file from our repository.
+For a detailed exploration and interactive visualizations, download the [EDA.ipynb]([notebooks/EDA.ipynb](https://github.com/darshan-kale-dsi/Bank-Marketing-Campaign/blob/main/EDA/EDA.ipynb)) file from our repository.
 
 Flow Chart : ![image](https://github.com/user-attachments/assets/bad41e74-6d08-4263-a2dc-49ca7bf4db5a)
 
